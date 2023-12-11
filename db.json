@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "carStore", 
+      "img": "project-10.png",
+      "description": "Modelo de Site feito para um Loja de carros. O usuário pode filtrar o tipo de veículo que deseja ver, pesquisar o por marca, modelo, ano e tipo.",
+      "technologies": "React.js, Vite, TailwindCss",
+      "url": "https://pedromarques391.github.io/carStore/"
+    },
+    {
+        "id": 2,
+        "name": "Magazine", 
+        "img": "project-1.png",
+        "description": "Modelo de Site feito para um Loja de comércio eletrônico. O usuário pode adicionar e remover os produtos do carrinho, pode filtrar os produtos pela marca e o histórico de compras fica salvo em Local Storage.",
+        "technologies": "JavaScript, Vite, TailwindCss",
+        "url": "https://pedromarques391.github.io/e-commerce/"
+    },
+    {
+        "id": 3,
+        "name": "Personal Finances", 
+        "img": "project-2.png",
+        "description": "Site para registro de finanças pessoais. O usuário pode cadastrar/remover finanças e filtrar os itens que deseja ver. Os dados ficam salvos em Local Storage.",
+        "technologies": "HTML, Bootstrap, JavaScript",
+        "url": "https://personalfinances.netlify.app"
+    },
+    {
+        "id": 4,
+        "name": "Finans", 
+        "img": "project-3.png",
+        "description": "Landing Page de um banco digítal fictício.",
+        "technologies": "HTML, Bootstrap",
+        "url": "https://finansbank.netlify.app/"
+    },
+    {
+        "id": 5,
+        "name": "Museu Nacional", 
+        "img": "project-6.png",
+        "description": "Landing Page Museu Nacional.",
+        "technologies": "HTML, Bootstrap",
+        "url": "https://nationalmuseum.netlify.app/"
+    },
+    {
+        "id": 6,
+        "name": "SecretWord", 
+        "img": "project-7.png",
+        "description": "Mini Game criado para fins educativos. O usuário tem 3 tentativas para adivinhar a palavra correta.",
+        "technologies": "React.js, vite, CSS",
+        "url": "https://pedromarques391.github.io/secretWord/"
+    },
+    {
+        "id": 7,
+        "name": "Cripto Price", 
+        "img": "project-8.png",
+        "description": "Site que verifica a cotação das principais cripto moedas da atualidade em tempo real. O usuário só precisar escolher a moeda.",
+        "technologies": "JavaScript, TailwindCss",
+        "url": "https://yourcriptoprice.netlify.app/"
+    },
+    {
+        "id": 8,
+        "name": "Info Filmes", 
+        "img": "project-9.png",
+        "description": "Site que mostra todas as informações sobre determinado filme escolhido pelo usuário.",
+        "technologies": "HTML, Bootstrap, JavaScript",
+        "url": "https://yourinfomovies.netlify.app/"
+    }
+]
