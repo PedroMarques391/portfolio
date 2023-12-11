@@ -13,14 +13,14 @@ const Body = () => {
         <main className='mt-20 text:black dark:text-white font-mono md:w-4/5 md:mx-auto duration-1000'>
         <section className="md:flex md:full md:justify-center md:mt-24 md:items-center">
         <div data-aos="flip-down"  data-aos-duration="3000" className='container flex flex-col justify-center items-center p-5 md:order-2'>
-            <img className='items-center w-48 bg-black dark:bg-slate-600 rounded-full md:w-60' src="portifolio/112777867.png" alt="Foto de perfil" />
+            <img className='items-center w-48 bg-black dark:bg-slate-600 rounded-full md:w-60' src="/portfolio/112777867.png" alt="Foto de perfil" />
             <div className="mt-5 flex gap-5 md:mt-8 md:gap-10">
-            <img className="w-10 md:w-12" src="portifolio/JavaScriptLogo.png" alt="JavaScriptLogo" />
-            <img className="w-10 md:w-12" src="portifolio/NodeJS.png" alt="NodeJS" />
-            <img className="w-10 md:w-12" src="portifolio/Docker logo.png" alt="JavaScriptLogo" />
-            <img className="w-10 md:w-12" src="portifolio/ReactJS.png" alt="JavaScriptLogo" />
-            <img className="w-10 md:w-12" src="portifolio/TailwindLogo.png" alt="JavaScriptLogo" />
-            <img className="w-10 md:w-12" src="portifolio/python.png" alt="JavaScriptLogo" />
+            <img className="w-10 md:w-12" src="/portfolio/JavaScriptLogo.png" alt="JavaScriptLogo" />
+            <img className="w-10 md:w-12" src="/portfolio/NodeJS.png" alt="NodeJS" />
+            <img className="w-10 md:w-12" src="/portfolio/Docker logo.png" alt="JavaScriptLogo" />
+            <img className="w-10 md:w-12" src="/portfolio/ReactJS.png" alt="JavaScriptLogo" />
+            <img className="w-10 md:w-12" src="/portfolio/TailwindLogo.png" alt="JavaScriptLogo" />
+            <img className="w-10 md:w-12" src="/portfolio/python.png" alt="JavaScriptLogo" />
             </div>
         </div>
         <div className='container flex flex-col justify-center md:order-1 p-2 items-center md:items-start'>
