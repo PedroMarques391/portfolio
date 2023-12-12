@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <>
     {projects && projects.map((project) => (
-        <div key={project.id} data-aos="fade-up"  data-aos-duration="2000" className="w-4/5 md:w-2/5 group mb-5 rounded-xl overflow-hidden text-white shadow-xl shadow-black dark:shadow-white text-center justify-between flex flex-col">
+        <div key={project.id} data-aos="fade-up"  data-aos-duration="2000" className="w-4/5 tablet:w-full md:w-2/5 group mb-5 rounded-xl overflow-hidden text-white shadow-xl shadow-black dark:shadow-white text-center justify-between flex flex-col">
             <img className="h-48 w-full md:h-52 md:mb-2 group-hover:scale-110 md:group-hover:scale-125 duration-500" src={`/portfolio/${project.img}`} alt="um projeto" />
             <section className="flex flex-col justify-between items-center p-3 md:h-48 md:mt-3 md:mb-2">
             <p className="text-xl text-black dark:text-white">{project.name}</p>

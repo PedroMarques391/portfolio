@@ -31,7 +31,7 @@ const DarkModeButton = () => {
       }
     }
   return (
-    <div className='absolute top-10 md:right-40 md:top-7'>
+    <div className='absolute top-10 md:right-[5%] md:top-6'>
       <button onClick={handleThemeSwitch} className='p-4 bg-blue-600 dark:bg-orange-700 text-white dark:text-black rounded-full w-12 h-12 flex justify-center items-center relative duration-1000'>
       {
         theme === 'light' ? <BsMoonFill/> : <BsFillSunFill/> 
