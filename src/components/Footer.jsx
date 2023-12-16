@@ -41,7 +41,8 @@ function Footer() {
               value={name}
               id="name"
               onChange={(e) => setName(e.target.value)}
-              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase placeholder:text-black placeholder:dark:text-white focus:outline-none md:mb-10 border-black dark:border-white ${emptyName && ' border-red-600 dark:border-red-700 transition duration-300 shake'}`}
+              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase placeholder:text-black placeholder:dark:text-white focus:outline-none md:mb-10 ${emptyName && 'border-red-600 dark:border-red-600 transition duration-300 shake'}
+              `}
               type="text"
               placeholder="Nome"
             />
@@ -53,7 +54,7 @@ function Footer() {
               value={message}
               id="message"
               onChange={(e) => setMessage(e.target.value)}
-              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase focus:outline-none md:mb-5 placeholder:text-black placeholder:dark:text-white border-black dark:border-white ${emptyMessage && 'border-red-600 dark:border-red-700 transition duration-300 shake'}`}
+              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase focus:outline-none md:mb-5 placeholder:text-black placeholder:dark:text-white ${emptyMessage && 'border-red-600 dark:border-red-600 transition duration-300 shake'}`}
               type="text"
               placeholder="Mensagem"
             />
@@ -64,9 +65,12 @@ function Footer() {
         <div className="flex flex-col items-center order-2 md:order-1 md:w-2/5">
           <Logo />
           <ul className="w-full flex justify-around my-5 md:p-5">
-            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-rose-700 duration-1000"><a href="https://www.instagram.com/pedromarques.py/"><i className="fa-brands fa-instagram" /></a></li>
-            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-blue-600 dark:hover:text-orange-600 duration-1000"><a href="https://github.com/PedroMarques391"><i className="fa-brands fa-github" /></a></li>
-            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-orange-700 dark:hover:text-blue-700 duration-1000"><a href="https://www.linkedin.com/in/pedromarques391/"><i className="fa-brands fa-linkedin" /></a></li>
+            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-rose-700 duration-1000">
+              <a href="https://www.instagram.com/pedromarques.py/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram" /></a>
+
+            </li>
+            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-blue-600 dark:hover:text-orange-600 duration-1000"><a href="https://github.com/PedroMarques391" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /></a></li>
+            <li className="text-3xl md:text-5xl md:p-10 p-5 hover:text-orange-700 dark:hover:text-blue-700 duration-1000"><a href="https://www.linkedin.com/in/pedromarques391/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin" /></a></li>
           </ul>
         </div>
       </section>
