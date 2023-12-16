@@ -1,35 +1,47 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 
+function Projects({ projectsToDisplay }) {
+  AOS.init();
+  const [projects, setProjects] = useState([]);
+  const [hiddenText, setHiddenText] = useState(false);
 
-const Projects = () => {
-    AOS.init()
-    const [projects, setProjects] = useState([])
+  const handleClick = (id) => {
+    const getUnique = projects.find((project) => project.id === id);
 
-    useEffect(() => {
-        const getData = async () => {
-            const data = await fetch("/portfolio/db.json")
-            const json = await data.json()
-            setProjects(json)
-        }
-        getData()
-    }, [])
+    setHiddenText(getUnique && id !== hiddenText ? getUnique.id : '');
+  };
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await fetch('/portfolio/db.json');
+      const json = await data.json();
+      setProjects(json);
+    };
+    getData();
+  }, []);
   return (
     <>
-    {projects && projects.map((project) => (
-        <div key={project.id} data-aos="fade-up"  data-aos-duration="2000" className="w-4/5 tablet:w-full md:w-2/5 group mb-5 rounded-xl overflow-hidden text-white shadow-xl shadow-black dark:shadow-white text-center justify-between flex flex-col">
-            <img className="h-48 w-full md:h-52 md:mb-2 group-hover:scale-110 md:group-hover:scale-125 duration-500" src={`/portfolio/${project.img}`} alt="um projeto" />
-            <section className="flex flex-col justify-between items-center p-3 md:h-48 md:mt-3 md:mb-2">
-            <p className="text-xl text-black dark:text-white">{project.name}</p>
-            <p className="text-black dark:text-white">{project.description}</p>
-            <p className="font-sans font-bold text-lg text-blue-600 dark:text-orange-600">{`Tecnologias: ${project.technologies}`}</p>
+      {projects && projects.slice(0, projectsToDisplay).map((project) => (
+        <div key={project.id} data-aos="fade-up" data-aos-duration="2000" className={`w-full tablet:w-full  group mb-5 rounded-xl overflow-hidden text-white shadow-xl shadow-black dark:shadow-white text-center justify-between flex flex-col ${projectsToDisplay === 3 ? 'md:w-[30%]' : 'md:w-1/5'}`}>
+          <div className="relative h-80">
+            <img className="w-full h-full" src={`/portfolio/${project.img}`} alt="um projeto" />
+            <section className="absolute top-0 h-full w-full text-white p-5 bg-black bg-opacity-75 flex flex-col justify-between duration-1000 opacity-0 hover:opacity-100">
+              <p className="text-xl pt-5 text-white">{project.id === hiddenText ? '' : project.name}</p>
+              <p className={`font-sans ${projectsToDisplay === 3 ? 'text-sm leading-5 md:text-xl md:leading-8' : 'text-sm leading-5'}`}>{project.id === hiddenText ? project.description : ''}</p>
+              <p className="font-sans font-bold text-lg text-blue-600 dark:text-orange-600">{project.id === hiddenText ? '' : project.technologies}</p>
+              <div className="mb-2 flex justify-between gap-5">
+                <a className="py-2 w-full font-sans text-center flex items-center justify-center border border-blue-600 hover:bg-blue-600 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black rounded-lg duration-700 dark:border-orange-600 " target="_blank" href={project.url} rel="noreferrer">Demonstração</a>
+                <button onClick={() => handleClick(project.id)} className="py-2 w-full font-sans text-center flex items-center justify-center border border-blue-600 hover:bg-blue-600 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black rounded-lg duration-700 dark:border-orange-600 ">{project.id === hiddenText ? 'Menos informações' : 'Mais Informações'}</button>
+
+              </div>
             </section>
-            <button className="font-sans py-4 bg-black dark:bg-white text-white dark:text-black font-bold hover:bg-gray-500 dark:hover:bg-gray-400 hover:font-bold duration-1000 tracking-widest w-full"><a target="_blank" href={project.url} rel="noreferrer">USAR</a></button>
+          </div>
         </div>
-    
-    ))}
+
+      ))}
     </>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
