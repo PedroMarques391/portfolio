@@ -41,7 +41,7 @@ function Footer() {
               value={name}
               id="name"
               onChange={(e) => setName(e.target.value)}
-              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase placeholder:text-black placeholder:dark:text-white focus:outline-none md:mb-10 ${emptyName && 'border-red-600 dark:border-red-600 transition duration-300 shake'}
+              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase placeholder:text-black placeholder:dark:text-white focus:outline-none md:mb-10 ${emptyName && 'border-red-600 dark:border-red-600 transition duration-300 animate-animateSnake'}
               `}
               type="text"
               placeholder="Nome"
@@ -54,7 +54,7 @@ function Footer() {
               value={message}
               id="message"
               onChange={(e) => setMessage(e.target.value)}
-              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase focus:outline-none md:mb-5 placeholder:text-black placeholder:dark:text-white ${emptyMessage && 'border-red-600 dark:border-red-600 transition duration-300 shake'}`}
+              className={`mb-2 w-full h-8 p-2 bg-transparent border-b-2 placeholder:uppercase focus:outline-none md:mb-5 placeholder:text-black placeholder:dark:text-white ${emptyMessage && 'border-red-600 dark:border-red-600 transition duration-300 animate-animateSnake'}`}
               type="text"
               placeholder="Mensagem"
             />
