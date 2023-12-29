@@ -17,6 +17,14 @@
     },
     {
         "id": 3,
+        "name": "Scooters", 
+        "img": "project-11.jpg",
+        "description": "Modelo de Site feito para uma loja que revende Scooters. Os links levam para o site oficial de cada Moto. Todas as Rotas são funcionais.",
+        "technologies": "React.js, Next.js, TailwindCss",
+        "url": "https://scooters-61grqbq78-pedro-marques-projects.vercel.app/"
+    },
+    {
+        "id": 4,
         "name": "Personal Finances", 
         "img": "project-2.png",
         "description": "Site para registro de finanças pessoais. O usuário pode cadastrar/remover finanças e filtrar os itens que deseja ver. Os dados ficam salvos em Local Storage.",
@@ -24,7 +32,7 @@
         "url": "https://personalfinances.netlify.app"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Finans", 
         "img": "project-3.png",
         "description": "Landing Page de um banco digítal fictício.",
@@ -32,7 +40,7 @@
         "url": "https://finansbank.netlify.app/"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Museu Nacional", 
         "img": "project-6.png",
         "description": "Landing Page Museu Nacional.",
@@ -40,7 +48,7 @@
         "url": "https://nationalmuseum.netlify.app/"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "SecretWord", 
         "img": "project-7.png",
         "description": "Mini Game criado para fins educativos. O usuário tem 3 tentativas para adivinhar a palavra correta.",
@@ -48,7 +56,7 @@
         "url": "https://pedromarques391.github.io/secretWord/"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Cripto Price", 
         "img": "project-8.png",
         "description": "Site que verifica a cotação das principais cripto moedas da atualidade em tempo real. O usuário só precisar escolher a moeda.",
@@ -56,7 +64,7 @@
         "url": "https://yourcriptoprice.netlify.app/"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Info Filmes", 
         "img": "project-9.png",
         "description": "Site que mostra todas as informações sobre determinado filme escolhido pelo usuário.",
