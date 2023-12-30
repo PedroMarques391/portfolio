@@ -5,7 +5,7 @@
       "img": "project-10.png",
       "description": "Modelo de Site feito para um Loja de carros. O usuário pode filtrar o tipo de veículo que deseja ver, pesquisar o por marca, modelo, ano e tipo.",
       "technologies": "React.js, Vite, TailwindCss",
-      "url": "https://pedromarques391.github.io/carStore/"
+      "url": "https://pedromarques391.github.io/carStore/#/"
     },
     {
         "id": 2,
