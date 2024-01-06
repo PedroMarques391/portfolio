@@ -21,7 +21,7 @@
         "img": "project-11.jpg",
         "description": "Modelo de Site feito para uma loja que revende Scooters. Os links levam para o site oficial de cada Moto. Todas as Rotas são funcionais.",
         "technologies": "React.js, Next.js, TailwindCss",
-        "url": "https://scooters-psi.vercel.app//"
+        "url": "https://scooters-psi.vercel.app/"
     },
     {
         "id": 4,
