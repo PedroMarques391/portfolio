@@ -33,16 +33,52 @@ function NavBar() {
         </div>
         <nav className="md:flex justify-around md:pt-5">
           <div className="hidden md:block"><Logo /></div>
-          <ul className={`${isOpen ? '-ml-72 -mt-[510px] text-blue-700 dark:text-orange-900 duration-700 invisible md:visible md:mt-0 md:text-black dark:md:text-white md:ml-0 md:flex md:justify-end gap-14 mr-10 items-center' : 'flex flex-col items-center leading-10 duration-1000 justify-around font-serif mt-10'}`}>
+          <ul
+            className={`${isOpen ? '-ml-72 -mt-[510px] text-blue-700 dark:text-orange-900 duration-700 invisible md:visible md:mt-0 md:text-black dark:md:text-white md:ml-0 md:flex md:justify-end gap-8 mr-10 items-center' : 'flex flex-col items-center leading-10 duration-1000 justify-around font-serif mt-10'}`}
+          >
             <DarkModeButton />
-            <li className="text-4xl h-36 tracking-widest md:mb-5 md:h-16 md:p-5 md:hover:-translate-y-4 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600 hover:duration-700">
-              <button onClick={() => animateScroll.scrollToTop(options)}>Home</button>
+            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
+              <button
+                className="p-5 uppercase"
+                onClick={() => animateScroll.scrollToTop(options)}
+              >
+                Home
+
+              </button>
             </li>
-            <li className="text-4xl h-36 tracking-widest md:mb-5 md:h-16 md:p-5 md:hover:-translate-y-4 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600 hover:duration-700">
-              <button onClick={() => animateScroll.scrollTo(450, options)}>Projetos</button>
+            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
+              <button
+                className="p-5 uppercase"
+                onClick={() => animateScroll.scrollToTop(options)}
+              >
+                <a
+                  href="https://pedromarques391.github.io/blog/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Blog
+
+                </a>
+
+              </button>
             </li>
-            <li className="text-4xl h-36 tracking-widest md:mb-5 md:h-16 md:p-5 md:hover:-translate-y-4 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600 hover:duration-700">
-              <button onClick={() => animateScroll.scrollToBottom(options)}>Contatos</button>
+            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
+              <button
+                className="p-5 uppercase"
+                onClick={() => animateScroll.scrollTo(450, options)}
+              >
+                Projetos
+
+              </button>
+            </li>
+            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600" border>
+              <button
+                className="p-5 uppercase"
+                onClick={() => animateScroll.scrollToBottom(options)}
+              >
+                Contatos
+
+              </button>
             </li>
           </ul>
 

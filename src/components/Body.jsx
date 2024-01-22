@@ -8,7 +8,7 @@ function Body() {
   const [projectsToDisplay, setProjectsToDisplay] = useState(3);
 
   const handleClick = () => {
-    projectsToDisplay === 3 ? setProjectsToDisplay(10) : setProjectsToDisplay(3);
+    projectsToDisplay === 3 ? setProjectsToDisplay(20) : setProjectsToDisplay(3);
   };
 
   const options = {
@@ -49,8 +49,7 @@ function Body() {
           <div className="relative w-full mb-20">
             <button className="absolute py-2 -bottom-16 w-full md:right-0 md:bottom-5 border border-blue-600 dark:border-orange-600 px-6 rounded-md my-5 text-blue-600 dark:text-orange-600 hover:text-white dark:hover:text-black hover:bg-blue-600 dark:hover:bg-orange-600 duration-500 md:w-44 md:py-3 md:ml-6" onClick={handleClick}>{projectsToDisplay === 3 ? 'Mostrar Todos' : 'Ocultar'}</button>
           </div>
-          <section className="container flex flex-wrap justify-center gap-7 md:mt-6">
-
+          <section className="container flex flex-wrap justify-center gap-12 md:mt-6">
             <Projects projectsToDisplay={projectsToDisplay} />
           </section>
         </section>
