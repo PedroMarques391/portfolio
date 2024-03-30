@@ -58,19 +58,18 @@ function Footer() {
               type="text"
               placeholder="Mensagem"
             />
-
+            <button type="submit" className="bg-blue-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white tracking-widest w-full text-xl text-center py-2 mt-2 rounded-xl hover:bg-blue-900 duration-1000 mb-10">Enviar</button>
           </div>
-          <button type="submit" className="bg-blue-600 dark:bg-orange-600 dark:hover:bg-orange-700 text-white tracking-widest text-xl text-center py-2 mt-2 rounded-xl hover:bg-blue-900 duration-1000">Enviar</button>
         </form>
         <div className="flex flex-col items-center order-2 md:order-1 md:w-2/5">
-          <Logo />
+          <div className="mt-10"><Logo /></div>
           <ul className="w-full flex justify-around my-5 md:p-5">
-            <li className="text-3xl md:text-5xl md:p-3 p-5 hover:text-rose-700 duration-1000">
+            <li className="text-3xl md:text-4xl md:p-3 p-5 hover:text-rose-700 duration-1000">
               <a href="https://www.instagram.com/pedromarques.py/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram" /></a>
 
             </li>
-            <li className="text-3xl md:text-5xl md:p-3 p-5 hover:text-blue-600 dark:hover:text-orange-600 duration-1000"><a href="https://github.com/PedroMarques391" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /></a></li>
-            <li className="text-3xl md:text-5xl md:p-3 p-5 hover:text-orange-700 dark:hover:text-blue-700 duration-1000"><a href="https://www.linkedin.com/in/pedromarques391/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin" /></a></li>
+            <li className="text-3xl md:text-4xl md:p-3 p-5 hover:text-blue-600 dark:hover:text-orange-600 duration-1000"><a href="https://github.com/PedroMarques391" target="_blank" rel="noreferrer"><i className="fa-brands fa-github" /></a></li>
+            <li className="text-3xl md:text-4xl md:p-3 p-5 hover:text-orange-700 dark:hover:text-blue-700 duration-1000"><a href="https://www.linkedin.com/in/pedromarques391/" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin" /></a></li>
           </ul>
         </div>
       </section>
