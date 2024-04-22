@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AOS from 'aos';
 import Projects from './Projects';
 import Typewriter from './Typewriter';
+import Image from './Image';
 
 function Body() {
   const [projectsToDisplay, setProjectsToDisplay] = useState(3);
@@ -21,7 +22,7 @@ function Body() {
       <main className="mt-20 text:black dark:text-white font-mono w-4/5 mx-auto duration-1000">
         <section className="md:flex md:w-full md:justify-center md:mt-24 md:items-center tablet:flex-col">
           <div data-aos="flip-down" data-aos-duration="3000" className="container flex flex-col justify-center items-center p-5 tablet:order-1  md:order-2">
-            <img className="items-center w-48 bg-black dark:bg-slate-600 rounded-full md:w-60" src="/portfolio/112777867.png" alt="Foto de perfil" />
+            <Image />
             <div className="mt-5 w-full justify-between flex md:mt-8 md:w-4/5">
               <img className="w-10 md:w-12" src="/portfolio/JavaScriptLogo.png" alt="JavaScriptLogo" />
               <img className="w-10 md:w-12" src="/portfolio/NodeJS.png" alt="NodeJS" />
