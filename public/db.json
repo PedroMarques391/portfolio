@@ -1,79 +1,6 @@
 [
     {
-      "id": 1,
-      "name": "carStore", 
-      "img": "project-10.png",
-      "description": "Modelo de Site feito para um Loja de carros. O usuário pode filtrar o tipo de veículo que deseja ver, pesquisar o por marca, modelo, ano e tipo.",
-      "technologies": "React.js, Vite, TailwindCss",
-      "url": "https://pedromarques391.github.io/carStore/#/"
-    },
-    {
-        "id": 2,
-        "name": "YourStore", 
-        "img": "project-12.png",
-        "description": "Modelo de Site feito para um Loja de Roupas. O usuário pode adicionar e remover cada item do carrinho, ou remover todos de uma vez. Os dados são mostrados de maneira dinâmica.",
-        "technologies": "React.js, Vite, TailwindCss",
-        "url": "https://pedromarques391.github.io/yourStore/"
-    },
-    
-    {
-        "id": 3,
-        "name": "Scooters", 
-        "img": "project-11.jpg",
-        "description": "Modelo de Site feito para uma loja que revende Scooters. Os links levam para o site oficial de cada Moto. Todas as Rotas são funcionais.",
-        "technologies": "React.js, Next.js, TailwindCss",
-        "url": "https://scooters-psi.vercel.app/"
-    },
-    {
-        "id": 4,
-        "name": "Magazine", 
-        "img": "project-1.png",
-        "description": "Modelo de Site feito para um Loja de comércio eletrônico. O usuário pode adicionar e remover os produtos do carrinho, pode filtrar os produtos pela marca e o histórico de compras fica salvo em Local Storage.",
-        "technologies": "JavaScript, Vite, TailwindCss",
-        "url": "https://pedromarques391.github.io/e-commerce/"
-    },
-    {
-        "id": 5,
-        "name": "Landing Page Model", 
-        "img": "project-13.png",
-        "description": "Modelo de Landing page para psicólogos.",
-        "technologies": "React.js, Next.js, TailwindCss",
-        "url": "https://dranabeatrizmendes.vercel.app/"
-    },
-    {
-        "id": 6,
-        "name": "Personal Finances", 
-        "img": "project-2.png",
-        "description": "Site para registro de finanças pessoais. O usuário pode cadastrar/remover finanças e filtrar os itens que deseja ver. Os dados ficam salvos em Local Storage.",
-        "technologies": "HTML, Bootstrap, JavaScript",
-        "url": "https://personalfinances.netlify.app"
-    },
-    {
-        "id": 7,
-        "name": "Finans", 
-        "img": "project-3.png",
-        "description": "Landing Page de um banco digítal fictício.",
-        "technologies": "HTML, Bootstrap",
-        "url": "https://finansbank.netlify.app/"
-    },
-    {
-        "id": 8,
-        "name": "Museu Nacional", 
-        "img": "project-6.png",
-        "description": "Landing Page Museu Nacional.",
-        "technologies": "HTML, Bootstrap",
-        "url": "https://nationalmuseum.netlify.app/"
-    },
-    {
-        "id": 9,
-        "name": "SecretWord", 
-        "img": "project-7.png",
-        "description": "Mini Game criado para fins educativos. O usuário tem 3 tentativas para adivinhar a palavra correta.",
-        "technologies": "React.js, vite, CSS",
-        "url": "https://pedromarques391.github.io/secretWord/"
-    },
-    {
-        "id": 10,
+        "id": 1,
         "name": "Cripto Price", 
         "img": "project-8.png",
         "description": "Site que verifica a cotação das principais cripto moedas da atualidade em tempo real. O usuário só precisar escolher a moeda.",
@@ -81,11 +8,91 @@
         "url": "https://yourcriptoprice.netlify.app/"
     },
     {
-        "id": 11,
-        "name": "Info Filmes", 
-        "img": "project-9.png",
-        "description": "Site que mostra todas as informações sobre determinado filme escolhido pelo usuário.",
+        "id": 2,
+        "name": "SecretWord", 
+        "img": "project-7.png",
+        "description": "Mini Game criado para fins educativos. O usuário tem 3 tentativas para adivinhar a palavra correta.",
+        "technologies": "React.js, vite, CSS",
+        "url": "https://pedromarques391.github.io/secretWord/"
+    },
+    {
+        "id": 3,
+        "name": "Museu Nacional", 
+        "img": "project-6.png",
+        "description": "Landing Page Museu Nacional.",
+        "technologies": "HTML, Bootstrap",
+        "url": "https://nationalmuseum.netlify.app/"
+    },
+    {
+        "id": 4,
+        "name": "Finans", 
+        "img": "project-3.png",
+        "description": "Landing Page de um banco digítal fictício.",
+        "technologies": "HTML, Bootstrap",
+        "url": "https://finansbank.netlify.app/"
+    },
+    {
+        "id": 5,
+        "name": "Personal Finances", 
+        "img": "project-2.png",
+        "description": "Site para registro de finanças pessoais. O usuário pode cadastrar/remover finanças e filtrar os itens que deseja ver. Os dados ficam salvos em Local Storage.",
         "technologies": "HTML, Bootstrap, JavaScript",
-        "url": "https://yourinfomovies.netlify.app/"
+        "url": "https://personalfinances.netlify.app"
+    },
+    {
+        "id": 6,
+        "name": "Landing Page Model", 
+        "img": "project-13.png",
+        "description": "Modelo de Landing page para psicólogos.",
+        "technologies": "React.js, Next.js, TailwindCss",
+        "url": "https://dranabeatrizmendes.vercel.app/"
+    },
+    {
+        "id": 7,
+        "name": "Magazine", 
+        "img": "project-1.png",
+        "description": "Modelo de Site feito para um Loja de comércio eletrônico. O usuário pode adicionar e remover os produtos do carrinho, pode filtrar os produtos pela marca e o histórico de compras fica salvo em Local Storage.",
+        "technologies": "JavaScript, Vite, TailwindCss",
+        "url": "https://pedromarques391.github.io/e-commerce/"
+    },
+    {
+        "id": 8,
+        "name": "Scooters", 
+        "img": "project-11.jpg",
+        "description": "Modelo de Site feito para uma loja que revende Scooters. Os links levam para o site oficial de cada Moto. Todas as Rotas são funcionais.",
+        "technologies": "React.js, Next.js, TailwindCss",
+        "url": "https://scooters-psi.vercel.app/"
+    },
+    {
+        "id": 9,
+        "name": "YourStore", 
+        "img": "project-12.png",
+        "description": "Modelo de Site feito para um Loja de Roupas. O usuário pode adicionar e remover cada item do carrinho, ou remover todos de uma vez. Os dados são mostrados de maneira dinâmica.",
+        "technologies": "React.js, Vite, TailwindCss",
+        "url": "https://pedromarques391.github.io/yourStore/"
+    },
+    {
+        "id": 10,
+        "name": "carStore", 
+        "img": "project-10.png",
+        "description": "Modelo de Site feito para um Loja de carros. O usuário pode filtrar o tipo de veículo que deseja ver, pesquisar o por marca, modelo, ano e tipo.",
+        "technologies": "React.js, Vite, TailwindCss",
+        "url": "https://pedromarques391.github.io/carStore/#/"
+    },
+    {
+        "id": 11,
+        "name": "Pacificus & Associados", 
+        "img": "project-14.png",
+        "description": "Modelo de Site feito para escritório de advogacia. O site conta com 6 rotas incluindo a rota de página não encontrado.",
+        "technologies": "TypeScript, React.js, Next.js, TailwindCss, Firebase",
+        "url": "https://pacificus.vercel.app/"
+    },
+    {
+        "id": 12,
+        "name": "carStoreV2", 
+        "img": "project-15.png",
+        "description": "Uma nova versão do carStore, agora com autenticação de administrador, rotas dinâmicas, pesquisas avançadas e veículos cadastrados em um banco de dados.",
+        "technologies": "TypeScript, React.js, Next.js, TailwindCss, Firebase",
+        "url": "https://carstorepa.vercel.app/"
     }
 ]

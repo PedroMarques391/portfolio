@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { animateScroll } from 'react-scroll';
 import Logo from './Logo';
 import DarkModeButton from './DarkModeButton';
+import LI from './LI';
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(true);
@@ -37,49 +38,10 @@ function NavBar() {
             className={`${isOpen ? '-ml-72 -mt-[510px] text-blue-700 dark:text-orange-900 duration-700 invisible md:visible md:mt-0 md:text-black dark:md:text-white md:ml-0 md:flex md:justify-end gap-8 mr-10 items-center' : 'flex flex-col items-center leading-10 duration-1000 justify-around font-serif mt-10'}`}
           >
             <DarkModeButton />
-            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
-              <button
-                className="p-5 uppercase"
-                onClick={() => animateScroll.scrollToTop(options)}
-              >
-                Home
-
-              </button>
-            </li>
-            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
-              <button
-                className="p-5 uppercase"
-                onClick={() => animateScroll.scrollToTop(options)}
-              >
-                <a
-                  href="https://pedromarques391.github.io/blog/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Blog
-
-                </a>
-
-              </button>
-            </li>
-            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600">
-              <button
-                className="p-5 uppercase"
-                onClick={() => animateScroll.scrollTo(450, options)}
-              >
-                Projetos
-
-              </button>
-            </li>
-            <li className="text-4xl h-32 tracking-widest md:mb-5 md:h-16 duration-1000 md:text-xl hover:text-blue-600 dark:hover:text-orange-600" border>
-              <button
-                className="p-5 uppercase"
-                onClick={() => animateScroll.scrollToBottom(options)}
-              >
-                Contatos
-
-              </button>
-            </li>
+            <LI onClick={() => animateScroll.scrollToTop(options)}>Home</LI>
+            <LI href="https://pedromarques391.github.io/blog/">Blog</LI>
+            <LI onClick={() => animateScroll.scrollTo(450, options)}>Projetos</LI>
+            <LI onClick={() => animateScroll.scrollToBottom(options)}>Contatos</LI>
           </ul>
 
         </nav>

@@ -16,6 +16,7 @@ function Projects({ projectsToDisplay }) {
     const getData = async () => {
       const data = await fetch('/portfolio/db.json');
       const json = await data.json();
+      json.reverse();
       setProjects(json);
     };
     getData();
@@ -34,7 +35,7 @@ function Projects({ projectsToDisplay }) {
             <img
               className="w-full h-full"
               src={`/portfolio/${project.img}`}
-              alt="um projeto"
+              alt={project.name}
             />
             <section className="absolute top-0 h-full w-full text-white p-5 bg-black bg-opacity-75 flex flex-col justify-between duration-1000 opacity-0 hover:opacity-100">
               <p className="text-xl pt-5 text-white">{project.id === hiddenText ? '' : project.name}</p>
