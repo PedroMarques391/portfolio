@@ -28,7 +28,7 @@ function NavBar() {
 
   return (
     <>
-      <header className={`block md:hidden fixed bg-white dark:bg-black mt-20 z-30 w-full transition-all duration-1000 top-0 shadow-2xl dark:shadow-white/30 ${isOpen ? '-top-[500px]' : 'top-0'}`}>
+      <header className={`block md:hidden fixed bg-white dark:bg-black mt-20 z-30 w-full transition-all duration-1000 top-0 shadow-2xl dark:shadow-white/30 ${isOpen ? '-right-[1000px]' : 'right-0'}`}>
         <SideBar />
       </header>
       <header className={`bg-white dark:bg-black h-20 duration-1000 fixed top-0 w-full z-20 ${scrollOn && 'shadow-black dark:shadow-white shadow-lg'}`}>
