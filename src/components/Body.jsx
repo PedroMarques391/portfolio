@@ -36,10 +36,10 @@ function Body() {
             <h1 data-aos="fade-right" data-aos-duration="3000" className="mt-2 text-xl md:mt-8 md:text-2xl">
               <Typewriter writing="Olá, Sou Pedro Marques" hiddenCursor />
             </h1>
-            <p className="text-blue-600 dark:text-orange-600 my-2 md:ml-6 md:text-xl">
+            <div className="text-blue-600 dark:text-orange-600 my-2 md:ml-6 md:text-xl">
               <Typewriter writing="Desenvolvedor Front-End" delay={2800} />
-            </p>
-            <p data-aos="flip-up" data-aos-duration="3000" className="w-full text-center leading-6 font-sans md:w-full md:text-left md:text-lg tablet:text-center">Desenvolvedor Web apaixonado em transformar conceitos em interfaces interativas e responsivas. Possuo sólidos conhecimentos nas tecnologias HTML, CSS, JavaScript, TypeScript, React.js, TailwindCss, Node.js, Bootstrap e Python.</p>
+            </div>
+            <div data-aos="flip-up" data-aos-duration="3000" className="w-full text-center leading-6 font-sans md:w-full md:text-left md:text-lg tablet:text-center">Desenvolvedor Web apaixonado em transformar conceitos em interfaces interativas e responsivas. Possuo sólidos conhecimentos nas tecnologias HTML, CSS, JavaScript, TypeScript, React.js, TailwindCss, Node.js, Bootstrap e Python.</div>
             <button onClick={() => animateScroll.scrollToBottom(options)} className="border border-blue-600 dark:border-orange-600 py-4 px-6 rounded-md my-5 text-blue-600 dark:text-orange-600 hover:text-white dark:hover:text-black hover:bg-blue-600 dark:hover:bg-orange-600 duration-500 md:w-2/5 md:py-3 md:ml-6">Entre em contato</button>
           </div>
         </section>
